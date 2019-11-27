@@ -62,7 +62,7 @@ functions:
 #    vpcConfig:
 #      vpcId: test
 #      subnetId: test
-#    events:
+    events:
 #      - timer:
 #          name: timer
 #          parameters:
@@ -77,12 +77,12 @@ functions:
 #              suffix: .jpg
 #            events: cos:ObjectCreated:*
 #            enable: true
-#      - apigw:
-#          name: hello_world_apigw
-#          parameters:
-#            stageName: release
-#            serviceId:
-#            httpMethod: ANY
+      - apigw:
+          name: hello_world_apigw
+          parameters:
+            stageName: release
+            serviceId:
+            httpMethod: ANY
 #      - cmq:
 #          name: cmq_trigger
 #          parameters:
